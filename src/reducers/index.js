@@ -1,7 +1,5 @@
-import HomeReducer from './HomeReducer.js'
-import OrdersReducer from './OrdersReducer.js'
+import HomeReducer from './NewReducer.js'
 
 export default {
-	home_list : HomeReducer,
-	orders_list : OrdersReducer
+	banner_list : HomeReducer
 }
