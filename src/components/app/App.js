@@ -12,6 +12,9 @@ import Home from '../home/Home.js'
 import Paint from '../paint/Paint.js'
 import Child from '../child/Child.js'
 import Baby from '../baby/Baby.js'
+import Me from '../me/Me.js'
+import Search from '../search/Search.js'
+import Detail from '../detail/Detail.js'
 //引入样式文件
 import './App.css'
 //UI
@@ -24,7 +27,7 @@ class App extends React.Component {
     current: 'index',
   }
   handleClick = (e) => {
-    console.log('click ', e);
+//  console.log('click ', e);
     this.setState({
       current: e.key,
     });
@@ -32,7 +35,6 @@ class App extends React.Component {
   render() {
     return (
     		<div id="ps-app">
-	    			<div id="ps-header">头部</div>
 	 			 		<Router>
 	  						<div id="ps-router">
 							      <Menu id="ps-nav" 
@@ -69,6 +71,9 @@ class App extends React.Component {
 						      	<Route  path="/paint" component={Paint}/>
 						      	<Route  path="/child" component={Child}/>
 						      	<Route  path="/baby" component={Baby}/>
+						      	<Route  path="/me" component={Me}/>
+						      	<Route  path="/search" component={Search}/>
+						      	<Route  path="/detail" component={Detail}/>
 	  						</div>
 	  				</Router>
     		</div>

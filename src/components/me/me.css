@@ -1,0 +1,45 @@
+@keyframes leftHover {
+  from {
+    left: -3.75rem; }
+  to {
+    left: 0; } }
+
+#ps-me {
+  position: absolute;
+  top: -9%;
+  left: 0;
+  width: 100%;
+  height: 109%;
+  animation: leftHover 0.5s;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  #ps-me .me-header {
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    #ps-me .me-header .me-back, #ps-me .me-header .me-home {
+      width: 20%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #ps-me .me-header .me-back img, #ps-me .me-header .me-home img {
+        display: block;
+        width: 40%;
+        height: 60%; }
+    #ps-me .me-header .me-title {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #ps-me .me-header .me-title img {
+        display: block;
+        width: 100%;
+        height: 100%; }

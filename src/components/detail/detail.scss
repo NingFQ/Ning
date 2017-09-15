@@ -1,0 +1,56 @@
+@keyframes bottomHover
+{
+    from {
+        top: 100%;
+    }
+    to {
+        top: -9%;
+    }
+    
+}
+#ps-detail{
+    position: absolute;
+    top: -9%;
+    left: 0;
+    width: 100%;
+    height: 109%;
+    animation: bottomHover 0.75s;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .detail-header{
+        width: 100%;
+        height: 0.45rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .detail-back ,.detail-home{
+            width: 20%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            img{
+                display: block;
+                width: 40%;
+                height: 60%;
+            }
+        }
+        .detail-title{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
