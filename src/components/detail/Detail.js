@@ -10,7 +10,7 @@ export default class Detail extends React.Component {
 						<img src={require('./back.png')} alt=""/>
 					</Link>
 					<div className="detail-title">
-						详情
+						详情{this.props.match.params.goodID}
 					</div>
 					<Link to={"/"} className="detail-home">
 						<img src={require('./home.png')} alt=""/>

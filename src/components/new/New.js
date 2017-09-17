@@ -1,35 +1,50 @@
 import React from 'react'
 import { Carousel } from 'antd';
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './new.css'
-
-class NewUI extends React.Component {
+import BScroll from 'better-scroll'
+export default class New extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			bannerList : [],
+			goodList : [],
+			allImg : []
+		}
+	}
 	componentDidMount() {
-		this.props.getBannerList();
+		this.getData();
+	}
+	getData() {
+		axios.get('/myapi/getbanner').then((res) => {
+        	this.setState({
+        		bannerList : res.data
+        	})
+        	axios.get('/myapi/getnewgood').then((res) => {
+	        	this.setState({
+	        		goodList : res.data,
+	        	})
+	        }).then(() => {
+        		setTimeout(() => {
+        			new BScroll( this.refs.wrapper,{
+    					click :  true
+    				})
+        		},0)
+        	})
+	        
+        })
 	}
 	render() {
 		return (
-			<div id="ps-new">
-				<div className="new-header">
-					<Link to={"/me"} className="new-list">
-						<img src={require('./me.png')} alt=""/>
-					</Link>
-					<div className="new-logo">
-						<img src={require('./logo.png')} alt="" />
-					</div>
-					<Link to={"/search"} className="new-info">
-						<img src={require('./search.png')} alt=""/>
-					</Link>
-				</div>
+			<div id="ps-new" ref="wrapper">
 				<div className="new-content">
 					<div className="new-banner">
 						<Carousel autoplay>
 						    {
-						    	this.props.banner_list.map((item,index) => {
+						    	this.state.bannerList.map((item,index) => {
 						    		return  <div key={"a" + index}>
-							    				<img src={item.url} alt="" />
+							    				<img className="imgUrl" src={item.url} alt="" />
 							    			</div>
 						    	})
 						    }
@@ -37,47 +52,42 @@ class NewUI extends React.Component {
 						<ul className=""></ul>
 					</div>
 					<ul className="new-goodlist">
-						<Link to={'/detail'} className="new-item">
-							<li>
-								<div className="goodImg">
-									<img src={require('./demo.jpg')} alt="" />
-								</div>
-								<div className="goodName">
-									<img src={require('./recommend.png')} alt="" />
-									<span>莲霖梦秋装新款莲霖梦秋装新款</span>
-								</div>
-								<div className="goodInfo">
-									<span className="goodPrice">¥520.0</span>
-									<span className="goodPeople">100人在抢</span>
-								</div>
-							</li>
-						</Link>
+						{
+							this.state.goodList.map((item,index) => {
+								return(
+									<Link to={'/detail' + item.goodID} className="new-item" key={"a" + index}>
+										<li>
+											<div className="goodImg">
+												<img className="imgUrl" src={item.showImg} alt="" />
+											</div>
+											<div className="goodName">
+												<img className="imgUrl" src={require(`${item.type}`)} alt="" />
+												<span>{item.goodname}</span>
+											</div>
+											<div className="goodInfo">
+												<span className="goodPrice">¥{item.price}</span>
+												<span className="goodPeople">{item.rushNumber}人在抢</span>
+											</div>
+										</li>
+									</Link>
+								)
+							})
+						}
 					</ul>
 				</div>
 			</div>
 		)
 	}
 }
-const mapState = (state) => {
-	return {
-		banner_list : state.banner_list
-	}
-}
-const mapDispatch = (dispatch) => {
-	return {
-		getBannerList : () => {
-			axios.get('/myapi/getdata')
-            .then((res) => {
-                dispatch({
-                	type : 'GET_BANNER_LIST',
-                	payload : res.data
-                })
-            })
-            .catch((err) => {
-            	console.log(err)
-            })
-		}
-	}
-}
-const New = connect(mapState,mapDispatch)(NewUI);
-export default New;
+//const mapState = (state) => {
+//	return {
+//		banner_list : state.banner_list
+//	}
+//}
+//const mapDispatch = (dispatch) => {
+//	return {
+//		
+// 	}
+//}
+//const New = connect(mapState,mapDispatch)(NewUI);
+//export default New;

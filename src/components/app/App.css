@@ -1,48 +1,77 @@
-@import '~antd/dist/antd.css';
-
-#ps-app{
-	width: 100%;
-	height: 100%;
-	font-size: 0.12rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-}
-#ps-router{
-	position: fixed;
-	top: 10%;
-	left: 0;
-	width: 100%;
-	height: 90%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-}
-#ps-nav{
-	width: 100%;
-	height: 0.45rem;
-	background: #000;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-#ps-nav li{
-	height: 100%;
-	width: 15%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-.ant-menu-horizontal > .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-submenu > a{
-	color: #fff;
-}
-.ant-menu-horizontal > .ant-menu-item > a:hover, .ant-menu-horizontal > .ant-menu-submenu > a:hover{
-	color: yellow;
-}
-.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected{
-	border-bottom: 0.02rem solid yellow;
-    color: yellow;
-}
+#po-app {
+  width: 100%;
+  height: 100%;
+  font-size: 0.12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  #po-app #po-router {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  #po-app #po-header {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #ef6ea8;
+    border-bottom: 0.01rem solid #eee; }
+    #po-app #po-header .po-list {
+      width: 10%;
+      height: 90%;
+      font-size: 0.14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #po-app #po-header .po-list img {
+        display: block;
+        width: 80%;
+        height: 60%; }
+    #po-app #po-header .po-logo {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #po-app #po-header .po-logo img {
+        display: block;
+        width: 70%;
+        height: 90%; }
+    #po-app #po-header .po-info {
+      width: 10%;
+      height: 100%;
+      font-size: 0.14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #po-app #po-header .po-info img {
+        display: block;
+        width: 70%;
+        height: 50%; }
+  #po-app #po-nav {
+    width: 100%;
+    height: 8%;
+    z-index: 1;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    #po-app #po-nav li {
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      text-align: center; }

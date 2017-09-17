@@ -1,16 +1,10 @@
-@keyframes bottomHover {
-  from {
-    top: 100%; }
-  to {
-    top: -9%; } }
-
 #ps-detail {
   position: absolute;
-  top: -9%;
+  top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
   height: 109%;
-  animation: bottomHover 0.5s;
   background: #fff;
   display: flex;
   flex-direction: column;

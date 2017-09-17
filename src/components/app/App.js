@@ -16,7 +16,7 @@ import Me from '../me/Me.js'
 import Search from '../search/Search.js'
 import Detail from '../detail/Detail.js'
 //引入样式文件
-import './App.css'
+import './app.css'
 //UI
 import { Menu } from 'antd';
 
@@ -34,10 +34,21 @@ class App extends React.Component {
   }
   render() {
     return (
-    		<div id="ps-app">
+    		<div id="po-app">
 	 			 		<Router>
-	  						<div id="ps-router">
-							      <Menu id="ps-nav" 
+	  						<div id="po-router">
+						    		<div id="po-header">
+												<Link to={"/me"} className="po-info">
+														<img src={require('./me.png')} alt=""/>
+												</Link>
+												<div className="po-logo">
+														<img src={require('./logo.png')} alt="" />
+												</div>
+												<Link to={"/search"} className="po-list">
+														<img src={require('./search.png')} alt=""/>
+												</Link>
+										</div>
+							      <Menu id="po-nav" 
 							      		onClick={this.handleClick} 
 							     			selectedKeys={[this.state.current]} 
 							     			mode="horizontal"
@@ -73,7 +84,7 @@ class App extends React.Component {
 						      	<Route  path="/baby" component={Baby}/>
 						      	<Route  path="/me" component={Me}/>
 						      	<Route  path="/search" component={Search}/>
-						      	<Route  path="/detail" component={Detail}/>
+						      	<Route  path="/detail:goodID" component={Detail}/>
 	  						</div>
 	  				</Router>
     		</div>
