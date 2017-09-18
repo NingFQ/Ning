@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/App.js';
 import registerServiceWorker from './registerServiceWorker';
+
 import reducersObj from './reducers/index.js'
 //引入redux
 import {createStore,combineReducers} from 'redux'
@@ -17,6 +18,6 @@ const renderPage = () => {
 			<App />
 		</Provider>, document.getElementById('root'));
 }
-store.subscribe(renderPage);
 renderPage();
+store.subscribe(renderPage);
 registerServiceWorker();

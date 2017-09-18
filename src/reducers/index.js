@@ -1,5 +1,5 @@
-import HomeReducer from './NewReducer.js'
+import DetailReducer from './DetailReducer.js'
 
 export default {
-	banner_list : HomeReducer
+	detail_info : DetailReducer
 }

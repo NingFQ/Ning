@@ -15,6 +15,7 @@ import Baby from '../baby/Baby.js'
 import Me from '../me/Me.js'
 import Search from '../search/Search.js'
 import Detail from '../detail/Detail.js'
+import Cart from '../cart/Cart.js'
 //引入样式文件
 import './app.css'
 //UI
@@ -75,6 +76,9 @@ class App extends React.Component {
 									      			<Link to="/baby">母婴</Link>
 									      	</Menu.Item>
 					      		</Menu>
+					      		<Link to="/cart" id="po-cart">
+					      				<img src={require("./cart.png")} alt="购物车"/>
+					      		</Link>
 						      	<Route exact path="/" component={New}/>
 						      	<Route  path="/women" component={Women}/>
 						      	<Route  path="/shoebag" component={Shoebag}/>
@@ -85,6 +89,7 @@ class App extends React.Component {
 						      	<Route  path="/me" component={Me}/>
 						      	<Route  path="/search" component={Search}/>
 						      	<Route  path="/detail:goodID" component={Detail}/>
+						      	<Route  path="/cart" component={Cart}/>
 	  						</div>
 	  				</Router>
     		</div>
@@ -92,3 +97,5 @@ class App extends React.Component {
   }
 }
 export default App
+
+

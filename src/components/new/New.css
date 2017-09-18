@@ -1,52 +1,50 @@
 @import url(~antd/dist/antd.css);
-#ps-new {
+#po-new {
   width: 100%;
   height: 82%;
-  position: absolute;
-  top: 18%;
-  left: 0;
+  position: relative;
   background: #E6E6FA;
-  overflow: hidden; }
-  #ps-new .new-content {
+  overflow: scroll; }
+  #po-new .new-content {
     width: 100%;
     height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
-    #ps-new .new-content .new-banner {
+    #po-new .new-content .new-banner {
       width: 100%;
       height: 1.6rem; }
-      #ps-new .new-content .new-banner .ant-carousel {
+      #po-new .new-content .new-banner .ant-carousel {
         width: 100%;
         height: 100%; }
-        #ps-new .new-content .new-banner .ant-carousel .slick-slider {
+        #po-new .new-content .new-banner .ant-carousel .slick-slider {
           width: 100%;
           height: 100%; }
-          #ps-new .new-content .new-banner .ant-carousel .slick-slider .slick-list {
+          #po-new .new-content .new-banner .ant-carousel .slick-slider .slick-list {
             width: 100%;
             height: 100%; }
-            #ps-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-track {
+            #po-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-track {
               width: 100%;
               height: 100%; }
-            #ps-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-slide {
+            #po-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-slide {
               width: 100%;
               height: 100%; }
-              #ps-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-slide img {
+              #po-new .new-content .new-banner .ant-carousel .slick-slider .slick-list .slick-slide img {
                 display: block;
                 width: 100%;
                 height: 100%; }
-      #ps-new .new-content .new-banner .ant-carousel .slick-slide {
+      #po-new .new-content .new-banner .ant-carousel .slick-slide {
         text-align: center;
         height: 160px;
         line-height: 160px;
         background: #364d79;
         overflow: hidden; }
-      #ps-new .new-content .new-banner .ant-carousel .slick-slide h3 {
+      #po-new .new-content .new-banner .ant-carousel .slick-slide h3 {
         color: #fff; }
-    #ps-new .new-content .new-goodlist {
+    #po-new .new-content .new-goodlist {
       width: 100%; }
-      #ps-new .new-content .new-goodlist .new-item {
+      #po-new .new-content .new-goodlist .new-item {
         display: block;
         width: 48%;
         height: 2rem;
@@ -56,22 +54,23 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin: 0.04rem 0.03rem; }
-      #ps-new .new-content .new-goodlist li {
+        margin: 0.04rem 0.03rem;
+        border-radius: 5%; }
+      #po-new .new-content .new-goodlist li {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center; }
-        #ps-new .new-content .new-goodlist li .goodImg {
+        #po-new .new-content .new-goodlist li .goodImg {
           width: 100%;
           height: 70%; }
-          #ps-new .new-content .new-goodlist li .goodImg img {
+          #po-new .new-content .new-goodlist li .goodImg img {
             display: block;
             width: 100%;
             height: 100%; }
-        #ps-new .new-content .new-goodlist li .goodName {
+        #po-new .new-content .new-goodlist li .goodName {
           width: 100%;
           height: 10%;
           margin: 0.05rem 0;
@@ -79,11 +78,11 @@
           flex-direction: row;
           justify-content: space-around;
           align-items: center; }
-          #ps-new .new-content .new-goodlist li .goodName img {
+          #po-new .new-content .new-goodlist li .goodName img {
             display: block;
             width: 18%;
             height: 0.22rem; }
-          #ps-new .new-content .new-goodlist li .goodName span {
+          #po-new .new-content .new-goodlist li .goodName span {
             display: block;
             width: 70%;
             height: 80%;
@@ -92,14 +91,14 @@
             text-overflow: ellipsis;
             line-height: 0.15rem;
             color: #000; }
-        #ps-new .new-content .new-goodlist li .goodInfo {
+        #po-new .new-content .new-goodlist li .goodInfo {
           width: 90%;
           height: 15%;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           align-items: center; }
-          #ps-new .new-content .new-goodlist li .goodInfo .goodPrice {
+          #po-new .new-content .new-goodlist li .goodInfo .goodPrice {
             display: block;
             width: 50%;
             height: 100%;
@@ -107,7 +106,7 @@
             font-size: 0.16rem;
             text-align: left;
             line-height: 0.3rem; }
-          #ps-new .new-content .new-goodlist li .goodInfo .goodPeople {
+          #po-new .new-content .new-goodlist li .goodInfo .goodPeople {
             display: block;
             width: 50%;
             height: 60%;

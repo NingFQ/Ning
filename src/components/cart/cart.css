@@ -1,39 +1,39 @@
-#ps-me {
+#cart {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
-  width: 100%;
-  height: 109%;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
-  #ps-me .me-header {
+  #cart .cart-header {
     width: 100%;
     height: 0.45rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
-    #ps-me .me-header .me-back, #ps-me .me-header .me-home {
+    #cart .cart-header .cart-back, #cart .cart-header .cart-home {
       width: 20%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
-      #ps-me .me-header .me-back img, #ps-me .me-header .me-home img {
+      #cart .cart-header .cart-back img, #cart .cart-header .cart-home img {
         display: block;
         width: 40%;
         height: 60%; }
-    #ps-me .me-header .me-title {
+    #cart .cart-header .cart-title {
       width: 60%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
-      #ps-me .me-header .me-title img {
+      #cart .cart-header .cart-title img {
         display: block;
         width: 100%;
         height: 100%; }

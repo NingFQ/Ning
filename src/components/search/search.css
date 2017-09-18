@@ -19,7 +19,7 @@
     align-items: center; }
     #ps-search .search-header .search-back, #ps-search .search-header .search-home {
       width: 20%;
-      height: 80%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
