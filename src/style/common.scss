@@ -1,60 +1,18 @@
-@import '~antd/dist/antd.css';
-
-#po-new{
+#po-container{
     width: 100%;
     height: 81%;
     position: relative;
     background:#E6E6FA;
     overflow: hidden;
-    .new-content{
+    .main-content{
         width: 100%;
-//      height: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        .new-banner{
+        .main-goodlist{
             width: 100%;
-            height: 1.6rem;
-            .ant-carousel{
-                width: 100%;
-                height: 100%;
-                .slick-slider{
-                    width: 100%;
-                    height: 100%;
-                    .slick-list{
-                        width: 100%;
-                        height: 100%;
-                        .slick-track{
-                            width: 100%;
-                            height: 100%;
-                        }
-                        .slick-slide {
-                            width: 100%;
-                            height: 100%;
-                            img{
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-            .ant-carousel .slick-slide {
-                text-align: center;
-                height: 160px;
-                line-height: 160px;
-                background: #364d79;
-                overflow: hidden;
-            }
-            .ant-carousel .slick-slide h3 {
-                color: #fff;
-            }
-        }
-        .new-goodlist{
-            width: 100%;
-            .new-item{
+            .main-item{
                 display: block;
                 width: 48%;
                 height: 2rem;

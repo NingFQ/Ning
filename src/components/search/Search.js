@@ -11,7 +11,7 @@ export default class Search extends React.Component {
 						<img src={require('./back.png')} alt=""/>
 					</Link>
 					<div className="search-title">
-						个人中心
+						商品列表
 					</div>
 					<Link to={"/"} className="search-home">
 						<img src={require('./home.png')} alt=""/>

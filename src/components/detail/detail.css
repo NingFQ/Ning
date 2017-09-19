@@ -13,106 +13,131 @@
   #po-detail .detail-content {
     width: 100%;
     height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     background: #fff;
-    overflow: scroll; }
-    #po-detail .detail-content .detail-swiper {
-      width: 100%;
-      height: 50rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #po-detail .detail-content .detail-swiper .ant-carousel {
-        width: 100%;
-        height: 100%; }
-        #po-detail .detail-content .detail-swiper .ant-carousel .slick-slider {
-          width: 100%;
-          height: 100%; }
-          #po-detail .detail-content .detail-swiper .ant-carousel .slick-slider .slick-list {
-            width: 100%;
-            height: 100%; }
-            #po-detail .detail-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-track {
-              width: 100%;
-              height: 100%; }
-            #po-detail .detail-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-slide {
-              width: 100%;
-              height: 100%; }
-              #po-detail .detail-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-slide img {
-                display: block;
-                width: 100%;
-                height: 100%; }
-      #po-detail .detail-content .detail-swiper .ant-carousel .slick-slide {
-        text-align: center;
-        height: 160px;
-        line-height: 160px;
-        background: #364d79;
-        overflow: hidden; }
-      #po-detail .detail-content .detail-swiper .ant-carousel .slick-slide h3 {
-        color: #fff; }
-    #po-detail .detail-content .detail-info {
-      width: 100%;
-      height: 30rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center; }
-      #po-detail .detail-content .detail-info .detail-price {
-        width: 90%;
-        height: 25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center; }
-        #po-detail .detail-content .detail-info .detail-price span:nth-child(1) {
-          display: block;
-          width: 15%;
-          height: 50%;
-          background: lightgoldenrodyellow;
-          color: orangered;
-          border-radius: 15%;
-          text-align: center;
-          line-height: 0.17rem; }
-        #po-detail .detail-content .detail-info .detail-price span:nth-child(2) {
-          display: block;
-          width: 25%;
-          height: 100%;
-          color: orangered;
-          text-align: center;
-          font-size: 0.22rem;
-          font-weight: bold;
-          line-height: 0.32rem; }
-        #po-detail .detail-content .detail-info .detail-price span:nth-child(3) {
-          display: block;
-          width: 10%;
-          height: 80%;
-          color: #999;
-          text-align: center;
-          text-decoration: line-through;
-          line-height: 0.3rem; }
-      #po-detail .detail-content .detail-info .detail-name {
-        width: 90%;
-        height: 30%;
-        color: #333; }
-      #po-detail .detail-content .detail-info .detail-describe {
-        width: 90%;
-        height: 45%; }
-        #po-detail .detail-content .detail-info .detail-describe p {
-          font-size: 0.12rem;
-          color: #999;
-          text-indent: 2em;
-          line-height: 0.2rem; }
-    #po-detail .detail-content .detail-shotimg {
+    overflow: hidden; }
+    #po-detail .detail-content .detail-scroll-content {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center; }
-      #po-detail .detail-content .detail-shotimg img {
-        display: inline-block;
-        width: 100%; }
+      align-content: flex-start; }
+      #po-detail .detail-content .detail-scroll-content .detail-swiper {
+        width: 100%;
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel {
+          width: 100%;
+          height: 100%; }
+          #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slider {
+            width: 100%;
+            height: 100%; }
+            #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slider .slick-list {
+              width: 100%;
+              height: 100%; }
+              #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-track {
+                width: 100%;
+                height: 100%; }
+              #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-slide {
+                width: 100%;
+                height: 100%; }
+                #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slider .slick-list .slick-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%; }
+        #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slide {
+          text-align: center;
+          height: 160px;
+          line-height: 160px;
+          background: #364d79;
+          overflow: hidden; }
+        #po-detail .detail-content .detail-scroll-content .detail-swiper .ant-carousel .slick-slide h3 {
+          color: #fff; }
+      #po-detail .detail-content .detail-scroll-content .detail-info {
+        width: 100%;
+        height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        #po-detail .detail-content .detail-scroll-content .detail-info .detail-price {
+          width: 90%;
+          height: 15%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center; }
+          #po-detail .detail-content .detail-scroll-content .detail-info .detail-price span:nth-child(1) {
+            display: block;
+            width: 15%;
+            height: 50%;
+            background: lightgoldenrodyellow;
+            color: orangered;
+            border-radius: 15%;
+            text-align: center;
+            line-height: 0.17rem; }
+          #po-detail .detail-content .detail-scroll-content .detail-info .detail-price span:nth-child(2) {
+            display: block;
+            width: 25%;
+            height: 100%;
+            color: orangered;
+            text-align: center;
+            font-size: 0.22rem;
+            font-weight: bold;
+            line-height: 0.32rem; }
+          #po-detail .detail-content .detail-scroll-content .detail-info .detail-price span:nth-child(3) {
+            display: block;
+            width: 10%;
+            height: 80%;
+            color: #999;
+            text-align: center;
+            text-decoration: line-through;
+            line-height: 0.3rem; }
+          #po-detail .detail-content .detail-scroll-content .detail-info .detail-price span:nth-child(4) {
+            display: block;
+            width: 50%;
+            height: 80%;
+            color: #999;
+            text-align: right;
+            line-height: 0.3rem; }
+        #po-detail .detail-content .detail-scroll-content .detail-info .detail-name {
+          width: 90%;
+          height: 20%;
+          color: #333; }
+        #po-detail .detail-content .detail-scroll-content .detail-info .detail-describe {
+          width: 90%;
+          height: 65%; }
+          #po-detail .detail-content .detail-scroll-content .detail-info .detail-describe p {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0.12rem;
+            color: #999;
+            text-indent: 2em;
+            line-height: 0.2rem; }
+      #po-detail .detail-content .detail-scroll-content .detail-shotimg {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        #po-detail .detail-content .detail-scroll-content .detail-shotimg .detail-line {
+          width: 100%;
+          height: 15%;
+          background: #000;
+          margin: 0.1rem auto; }
+          #po-detail .detail-content .detail-scroll-content .detail-shotimg .detail-line p {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 0.2rem;
+            line-height: 0.35rem; }
+        #po-detail .detail-content .detail-scroll-content .detail-shotimg img {
+          display: block;
+          width: 100%; }
   #po-detail .detail-footer {
     width: 100%;
     height: 10%;

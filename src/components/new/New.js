@@ -3,7 +3,7 @@ import { Carousel } from 'antd';
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './new.css'
-//import BScroll from 'better-scroll'
+import BScroll from 'better-scroll'
 export default class New extends React.Component {
 	constructor() {
 		super();
@@ -21,15 +21,15 @@ export default class New extends React.Component {
         	this.setState({
         		bannerList : res.data
         	})
-        	axios.get('/myapi/getnewgood').then((res) => {
+        	axios.get('/myapi/getnew').then((res) => {
 	        	this.setState({
 	        		goodList : res.data,
 	        	})
 	        }).then(() => {
         		setTimeout(() => {
-//      			new BScroll("#po-new",{
-//  					click :  true
-//  				})
+        			new BScroll("#po-new",{
+    					click :  true
+    				})
         		},0)
         	})
 	        
@@ -55,7 +55,7 @@ export default class New extends React.Component {
 						{
 							this.state.goodList.map((item,index) => {
 								return(
-									<Link to={'/detail' + item._id} className="new-item" key={"a" + index}>
+									<Link to={"/detail"+item._id} className="new-item" key={"a" + index}>
 										<li>
 											<div className="goodImg">
 												<img className="imgUrl" src={item.showImg} alt="" />

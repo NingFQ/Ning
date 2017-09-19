@@ -16,7 +16,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    border-bottom: 0.01rem solid #ccc; }
     #ps-search .search-header .search-back, #ps-search .search-header .search-home {
       width: 20%;
       height: 100%;

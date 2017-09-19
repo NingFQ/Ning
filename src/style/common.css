@@ -1,0 +1,82 @@
+#po-container {
+  width: 100%;
+  height: 81%;
+  position: relative;
+  background: #E6E6FA;
+  overflow: hidden; }
+  #po-container .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #po-container .main-content .main-goodlist {
+      width: 100%; }
+      #po-container .main-content .main-goodlist .main-item {
+        display: block;
+        width: 48%;
+        height: 2rem;
+        float: left;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.04rem 0.03rem;
+        border-radius: 5%; }
+      #po-container .main-content .main-goodlist li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        #po-container .main-content .main-goodlist li .goodImg {
+          width: 100%;
+          height: 70%; }
+          #po-container .main-content .main-goodlist li .goodImg img {
+            display: block;
+            width: 100%;
+            height: 100%; }
+        #po-container .main-content .main-goodlist li .goodName {
+          width: 100%;
+          height: 10%;
+          margin: 0.05rem 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+          #po-container .main-content .main-goodlist li .goodName img {
+            display: block;
+            width: 18%;
+            height: 0.22rem; }
+          #po-container .main-content .main-goodlist li .goodName span {
+            display: block;
+            width: 70%;
+            height: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 0.15rem;
+            color: #000; }
+        #po-container .main-content .main-goodlist li .goodInfo {
+          width: 90%;
+          height: 15%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+          #po-container .main-content .main-goodlist li .goodInfo .goodPrice {
+            display: block;
+            width: 50%;
+            height: 100%;
+            color: red;
+            font-size: 0.16rem;
+            text-align: left;
+            line-height: 0.3rem; }
+          #po-container .main-content .main-goodlist li .goodInfo .goodPeople {
+            display: block;
+            width: 50%;
+            height: 60%;
+            text-align: right;
+            color: #999; }

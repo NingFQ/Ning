@@ -9,6 +9,7 @@
   #po-app #po-router {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -46,7 +47,7 @@
         height: 90%; }
   #po-app #po-nav {
     width: 100%;
-    height: 8%;
+    height: 9%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -64,8 +65,9 @@
     border-radius: 50%;
     position: fixed;
     top: 84%;
-    right: 5%;
+    left: 5%;
     display: flex;
+    z-index: 1;
     justify-content: center;
     align-items: center; }
     #po-app #po-cart img {
