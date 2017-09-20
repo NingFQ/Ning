@@ -49,20 +49,19 @@ export default class New extends React.Component {
 						    	})
 						    }
 						</Carousel>
-						<ul className=""></ul>
 					</div>
 					<ul className="new-goodlist">
 						{
 							this.state.goodList.map((item,index) => {
 								return(
-									<Link to={"/detail"+item._id} className="new-item" key={"a" + index}>
+									<Link to={"/detail"+item.goodid} className="new-item" key={"a" + index}>
 										<li>
 											<div className="goodImg">
 												<img className="imgUrl" src={item.showImg} alt="" />
 											</div>
 											<div className="goodName">
-												<img className="imgUrl" src={require(`${item.type}`)} alt="" />
-												<span>{item.goodname}</span>
+												<img className="imgUrl" src={require(`../../style/icon/${item.type}`)} alt="" />
+												<span>{item.goodName}</span>
 											</div>
 											<div className="goodInfo">
 												<span className="goodPrice">¥{item.price}</span>

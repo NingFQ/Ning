@@ -14,10 +14,10 @@ export default class DetailUI extends React.Component {
 	}
 	componentDidMount() {
 		this.getDetail();
-		console.log(this.props.match.params.goodID)
+		console.log(this.props.match)
 	}
 	getDetail (){
-		fetch("/myapi/getdetail?_id=" + this.props.match.params.goodID)
+		fetch("/myapi/getdetail?goodid=" + this.props.match.params.goodID)
 			.then( (res) => {
 				return res.json();
 			})
@@ -27,21 +27,21 @@ export default class DetailUI extends React.Component {
 					slideImg : json[0].slideImg,
 					shotImg : json[0].shotImg
 				})
-				console.log(this.state.goodInfo)
 			})
 			.then(() => {
 				setTimeout(() => {
 					new BScroll(".detail-content",{
 						click : true
 					})
-				},10)
+					console.log(this.state.goodInfo)
+				},100)
 			})
 		}
 	render() {
 		return(
 			<div id="po-detail">
 				<Link to={'/'} className="detail-back">
-					<img src={require('./back.png')} alt=""/>
+					<img src={require('../../style/icon/./back.png')} alt=""/>
 				</Link>
 				<div className="detail-content">
 					<div className="detail-scroll-content">
@@ -66,10 +66,10 @@ export default class DetailUI extends React.Component {
 								<span>{this.state.goodInfo.buyNumber}人已购买</span>
 							</div>
 							<div className="detail-name">
-								<h3>{this.state.goodInfo.goodname}</h3>
+								<h3>{this.state.goodInfo.goodName}</h3>
 							</div>
 							<div className="detail-describe">
-								<p>{this.state.goodInfo.describe}</p><hr />
+								<p>{this.state.goodInfo.describe}</p>
 							</div>
 							
 						</div>
@@ -88,7 +88,15 @@ export default class DetailUI extends React.Component {
 					</div>
 				</div>
 				<div className="detail-footer">
-					<h1>加入购物车</h1>
+					<div className="detail-like">
+						<img src={require('../../style/icon/like.png')} alt=""/>
+					</div>
+					<div className="detail-collect">
+						<img src={require('../../style/icon/collect.png')} alt=""/>
+					</div>
+					<div className="detail-cart">
+						加入购物车
+					</div>
 				</div>
 			</div>
 		)

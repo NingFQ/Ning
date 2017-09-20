@@ -1,0 +1,47 @@
+.me-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .me-ipt,.me-psw{
+        width: 80%;
+        height: 0.4rem;
+        margin: 0.1rem 0;
+        input{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding-left: 0.2rem;
+            border: none;
+            outline: none;
+            border:0.01rem solid #ccc
+        }
+    }
+    .me-forget{
+        width: 80%;
+        height: 0.4rem;
+        text-align: right;
+        span{
+            
+            color: dodgerblue;
+        }
+    }
+    .me-loginbtn{
+        width: 60%;
+        height: 0.4rem;
+        button{
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            font-size: 0.16rem;
+            border-radius: 0.1rem;
+        }
+    }
+}

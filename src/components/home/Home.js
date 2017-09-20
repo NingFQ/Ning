@@ -34,13 +34,13 @@ export default class New extends React.Component {
 						{
 							this.state.goodList.map((item,index) => {
 								return(
-									<Link to={'/detail' + item._id} className="main-item" key={"a" + index}>
+									<Link to={'/detail' + item.goodid} className="main-item" key={"a" + index}>
 										<li>
 											<div className="goodImg">
 												<img className="imgUrl" src={item.showImg} alt="" />
 											</div>
 											<div className="goodName">
-												<img className="imgUrl" src={require(`${item.type}`)} alt="" />
+												<img className="imgUrl" src={require(`../../style/icon/${item.type}`)} alt="" />
 												<span>{item.goodName}</span>
 											</div>
 											<div className="goodInfo">

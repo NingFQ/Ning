@@ -1,90 +1,50 @@
-#ps-me {
+#po-me {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
-  height: 109%;
+  height: 100%;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
-  #ps-me .me-header {
+  #po-me .me-content {
     width: 100%;
-    height: 0.45rem;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 0.01rem solid #ccc; }
-    #ps-me .me-header .me-back, #ps-me .me-header .me-register {
-      width: 20%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #ps-me .me-header .me-back img, #ps-me .me-header .me-register img {
-        display: block;
-        width: 40%;
-        height: 60%; }
-      #ps-me .me-header .me-back span, #ps-me .me-header .me-register span {
-        color: deepskyblue;
-        font-size: 0.16rem; }
-    #ps-me .me-header .me-title {
-      width: 60%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #ps-me .me-header .me-title img {
-        display: block;
-        width: 100%;
-        height: 100%; }
-  #ps-me .me-content {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: #fff; }
-    #ps-me .me-content .me-form1, #ps-me .me-content .me-form2 {
+    flex-direction: column; }
+    #po-me .me-content .me-header {
       width: 100%;
-      height: 1.8rem;
+      height: 0.45rem;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      flex-direction: row;
+      justify-content: flex-start;
       align-items: center; }
-      #ps-me .me-content .me-form1 input, #ps-me .me-content .me-form2 input {
-        display: inline-block;
-        width: 100%;
+      #po-me .me-content .me-header .me-back {
+        width: 11%;
         height: 100%;
-        border: none;
-        outline: none;
-        padding-left: 0.1rem;
-        border-bottom: 0.01rem solid #ccc; }
-      #ps-me .me-content .me-form1 .me-ipt, #ps-me .me-content .me-form1 .me-psw, #ps-me .me-content .me-form1 .me-forget, #ps-me .me-content .me-form2 .me-ipt, #ps-me .me-content .me-form2 .me-psw, #ps-me .me-content .me-form2 .me-forget {
-        width: 90%;
-        height: 20%; }
-      #ps-me .me-content .me-form1 .me-forget, #ps-me .me-content .me-form2 .me-forget {
-        text-align: right;
-        color: cornflowerblue; }
-      #ps-me .me-content .me-form1 .me-login, #ps-me .me-content .me-form2 .me-login {
-        width: 80%;
-        height: 25%;
-        background: #000000;
-        border-radius: 0.05rem 0.05rem 0.05rem 0.05rem;
-        text-align: center; }
-      #ps-me .me-content .me-form1 .me-login button, #ps-me .me-content .me-form2 .me-login button {
-        width: 100%;
-        height: 100%;
-        border: none;
-        outline-style: none;
-        color: #fff;
-        font-size: 0.16rem;
-        line-height: 0.4rem; }
-    #ps-me .me-content .me-form2 {
-      height: 2rem; }
-      #ps-me .me-content .me-form2 .me-login {
-        margin-top: 0.2rem; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.2rem; }
+        #po-me .me-content .me-header .me-back img {
+          display: block;
+          width: 90%;
+          height: 70%; }
+      #po-me .me-content .me-header .login-router, #po-me .me-content .me-header .register-router {
+        width: 30%;
+        height: 50%;
+        text-align: center;
+        font-size: 0.14rem;
+        line-height: 0.25rem; }
+      #po-me .me-content .me-header .login-router {
+        border-right: 0.01rem solid #ccc; }
+    #po-me .me-content .me-container {
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }

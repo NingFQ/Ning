@@ -7,14 +7,14 @@ export default class Cart extends React.Component {
 		return(
 			<div id="cart">
 				<div className="cart-header">
-					<Link to={"/"} className="cart-back">
-						<img src={require('./back.png')} alt=""/>
+					<Link to="/" className="cart-back">
+						<img src={require('../../style/icon/back.png')} alt=""/>
 					</Link>
 					<div className="cart-title">
 						购物车
 					</div>
 					<Link to={"/"} className="cart-home">
-						<img src={require('./home.png')} alt=""/>
+						<img src={require('../../style/icon/home.png')} alt=""/>
 					</Link>
 				</div>
 			</div>

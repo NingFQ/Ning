@@ -2,7 +2,8 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Redirect
 } from 'react-router-dom'
 //引入组件
 import New from '../new/New.js'
@@ -28,7 +29,6 @@ class App extends React.Component {
     current: 'index',
   }
   handleClick = (e) => {
-//  console.log('click ', e);
     this.setState({
       current: e.key,
     });
@@ -40,13 +40,13 @@ class App extends React.Component {
 	  						<div id="po-router">
 						    		<div id="po-header">
 												<Link to={"/me"} className="po-info">
-														<img src={require('./me.png')} alt=""/>
+														<img src={require('../../style/icon/me.png')} alt=""/>
 												</Link>
 												<div className="po-logo">
-														<img src={require('./logo.png')} alt="" />
+														<img src={require('../../style/icon/logo.png')} alt="" />
 												</div>
 												<Link to={"/search"} className="po-list">
-														<img src={require('./search.png')} alt=""/>
+														<img src={require('../../style/icon/search.png')} alt=""/>
 												</Link>
 										</div>
 							      <Menu id="po-nav" 
@@ -77,7 +77,7 @@ class App extends React.Component {
 									      	</Menu.Item>
 					      		</Menu>
 					      		<Link to="/cart" id="po-cart">
-					      				<img src={require("./cart.png")} alt="购物车"/>
+					      				<img src={require("../../style/icon/cart.png")} alt="购物车"/>
 					      		</Link>
 						      	<Route exact path="/" component={New}/>
 						      	<Route  path="/women" component={Women}/>
@@ -86,7 +86,9 @@ class App extends React.Component {
 						      	<Route  path="/paint" component={Paint}/>
 						      	<Route  path="/child" component={Child}/>
 						      	<Route  path="/baby" component={Baby}/>
-						      	<Route  path="/me" component={Me}/>
+						      	<Route  path="/me" component={Me} />
+						      	<Route  exact path="/me" render={()=><Redirect to="/me/login"/>}/>
+						      	
 						      	<Route  path="/search" component={Search}/>
 						      	<Route  path="/detail:goodID" component={Detail}/>
 						      	<Route  path="/cart" component={Cart}/>

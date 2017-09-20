@@ -1,0 +1,54 @@
+.me-register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .me-register .me-ipt, .me-register .me-psw {
+    width: 80%;
+    height: 0.4rem;
+    margin: 0.1rem 0; }
+    .me-register .me-ipt input, .me-register .me-psw input {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding-left: 0.2rem;
+      border: none;
+      outline: none;
+      border: 0.01rem solid #ccc; }
+  .me-register .me-get {
+    width: 80%;
+    height: 0.4rem;
+    margin: 0.2rem 0; }
+    .me-register .me-get input {
+      display: inline-block;
+      width: 70%;
+      height: 100%;
+      padding-left: 0.2rem;
+      border: none;
+      outline: none;
+      border: 0.01rem solid #ccc; }
+    .me-register .me-get button {
+      width: 30%;
+      height: 90%;
+      outline: none;
+      border: none;
+      background: #000000;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.1rem; }
+  .me-register .me-registerbtn {
+    width: 60%;
+    height: 0.4rem; }
+    .me-register .me-registerbtn button {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      background: #000000;
+      color: #fff;
+      text-align: center;
+      font-size: 0.16rem;
+      border-radius: 0.1rem; }
