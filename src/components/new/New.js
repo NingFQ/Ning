@@ -9,8 +9,7 @@ export default class New extends React.Component {
 		super();
 		this.state = {
 			bannerList : [],
-			goodList : [],
-			allImg : []
+			goodList : []
 		}
 	}
 	componentDidMount() {

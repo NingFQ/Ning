@@ -83,5 +83,18 @@
             width: 60%;
             height: 60%;
         }
+        .cartNum{
+            position: absolute;
+            top: -15%;
+            right: 0;
+            display: block;
+            width: 0.2rem;
+            height: 0.2rem;
+            background: red;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 0.2rem;
+        }
     }
 }

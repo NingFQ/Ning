@@ -77,6 +77,7 @@ class App extends React.Component {
 									      	</Menu.Item>
 					      		</Menu>
 					      		<Link to="/cart" id="po-cart">
+					      				<span className="cartNum">99</span>
 					      				<img src={require("../../style/icon/cart.png")} alt="购物车"/>
 					      		</Link>
 						      	<Route exact path="/" component={New}/>
@@ -88,7 +89,6 @@ class App extends React.Component {
 						      	<Route  path="/baby" component={Baby}/>
 						      	<Route  path="/me" component={Me} />
 						      	<Route  exact path="/me" render={()=><Redirect to="/me/login"/>}/>
-						      	
 						      	<Route  path="/search" component={Search}/>
 						      	<Route  path="/detail:goodID" component={Detail}/>
 						      	<Route  path="/cart" component={Cart}/>
